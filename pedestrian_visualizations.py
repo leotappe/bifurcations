@@ -35,6 +35,8 @@ def plot_coordinates_over_time(pedestrian_id=1):
         fig.suptitle(rf'Coordinates of pedestrian {pedestrian_id} with obstacle at $y$ = {y_obstacle}')
         ax.plot(T, X, label=r'$x$')
         ax.plot(T, Y, label=r'$y$')
+        ax.set_xlabel('coordinates')
+        ax.set_ylabel('time')
         ax.legend()
         plt.show()
 
